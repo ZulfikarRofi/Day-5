@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="assets/contact.css">
+    <script src="form.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <ul>
+                <li><a href="https://www.dumbways.id"><img src="assets/pic/dw-logo.png" alt="dumbways"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div><a href="contact.html">Contact Me</a></div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- <h2>GET IN TOUCH</h2> -->
+        <form>
+            <div class="content">
+                <h2>GET IN TOUCH</h2>
+                <div class="form-group">
+                    <div class="form-group-contact">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group-contact">
+                        <label for="name">Email</label>
+                        <input type="email" name="email" id="email" placeholder="ex: aaaaa@aaa.com">
+                    </div>
+                    <div class="form-group-contact">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="ex: 08xx-xxxx-xxxx">
+                    </div>
+                    <div class="form-group-contact">
+                        <label for="subject">Subject</label>
+                        <select name="subject" id="subject">
+                            <option value=""> --Select-- </option>
+                            <option>FrontEnd</option>
+                            <option>BackEnd</option>
+                            <option>Fullstack</option>
+                        </select>
+                    </div>
+                    <div class="form-group-contact">
+                        <label for="msg">Your Messages</label>
+                        <textarea name="msg" id="msg" cols="30" rows="10" placeholder="text your message here!"></textarea>
+                    </div>
+                    <button type="button" onclick="submitData()">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

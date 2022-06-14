@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project-Personal Website</title>
+    <link rel="stylesheet" href="assets/project.css">
+    <script src="https://kit.fontawesome.com/dfbbe7cb95.js" crossorigin="anonymous"></script>
+    <script src="project.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <ul>
+                <li><a href="https://www.dumbways.id"><img src="assets/pic/dw-logo.png" alt="dumbways"></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <div><a href="contact.html">Contact Me</a></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+            <h2>ADD TO MY PROJECT</h2>
+            <div class="form-group">
+                <form onsubmit="newProject(event)">
+                    <div class="form-group-project">
+                        <label for="pname">Project Name</label>
+                        <input type="text" name="pname" id="pname" placeholder="Project Name">
+                    </div>
+                    <div class="form-group-project-date">
+                        <div class="date-left">
+                            <label for="strdate">Start Date</label>
+                            <input type="date" name="strdate" id="strdate" placeholder="Start Date">
+                        </div>
+                        <div class="date-right">
+                            <label for="enddate">End Date</label>
+                            <input type="date" name="enddate" id="enddate" placeholder="End Date">
+                        </div>
+                    </div>
+                    <div class="form-group-project">
+                        <label for="description">Description</label>
+                        <textarea style="margin-bottom:0px ;" name="description" id="description" cols="30" rows="15" placeholder="Text your description here!"></textarea>
+                    </div>
+                    <div class="tech-title">
+                        <label>Technologies</label>
+                    </div>
+                    <div class="tech">
+                        <div class="tech-fill">
+                            <div class="tech-fill-top">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Node JS
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    React JS
+                                </label>
+                            </div>
+                            <div class="tech-fill-bottom">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Next JS
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="checkmark"></span>
+                                    Typescript
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-input-image">
+                        <label for="upload-images">
+                            <p>Choose</p>
+                            <input type="file" id="upload-images" hidden>
+                        </label>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="posted-project">
+        <div class="post-title">
+            <h2>MY PROJECT</h2>
+        </div>
+        <div class="post-page" id="project-card">
+            <div class="card">
+                <img src="assets/pic/coding.jpg" alt="content-image">
+                <a class="card-title" href="detail.html">
+                    Pasar Coding Di Indonesia Dinilai masih menjanjikan
+                </a>
+                <p class="content-duration">
+                    durasi : 1 Bulan
+                </p>
+                <p class="content-text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates reiciendis modi unde assumenda sint magnam, in minima harum aliquid repellat rerum accusamus quo dolor sit voluptas distinctio velit eligendi accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quas ea nisi delectus distinctio culpa eum expedita, ipsam voluptas impedit optio modi eos voluptatibus? Non cupiditate veniam ad iste aspernatur?
+                </p>
+                <div class="tech-logo">
+                    <a href="">
+                        <img src="assets/pic/nodejs.png" alt="nodejs">
+                    </a>
+                    <a href="">
+                        <img src="assets/pic/nextjs.png" alt="nextjs">
+                    </a>
+                    <a href="">
+                        <img src="assets/pic/reactjs.png" alt="reactjs">
+                    </a>
+                    <a href="">
+                        <img src="assets/pic/typescript.png" alt="typescript">
+                    </a>
+                </div>
+                <div class="card-button-group">
+                    <a href="#">Edit</a>
+                    <a href="#">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
